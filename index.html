@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+	<title>Kalkulator - test</title>
+	<!-- Web styles --> 
+		<link rel="Stylesheet" type="text/css" href="Media/Style.css" />
+	<!-- QUNIT styles yeah copypaste from qunit webpage --> 
+		<link rel="Stylesheet" type="text/css" href="Media/qunit-1.10.0.css" />
+	<!-- JQUERY CORE --> 
+		<script type="text/javascript" src="JS/jquery-1.8.2.js"></script>
+	<!-- QUNIT CORE --> 
+		<script type="text/javascript" src="JS/qunit-1.10.0.js"></script>
+	<!-- Main JS file --> 
+		<script type="text/javascript" src="JS/Core.js"></script>
+	<!-- JS file for testing --> 
+		<script type="text/javascript" src="JS/Test.js"></script>
+</head>
+<body>
+	<!-- Calculator script --> 
+	<script>
+		// If document is fully loaded
+		$(document).ready(function()
+		{
+				// Append QUnit info panel into proper DIV
+				$('.QUNIT_PANEL').append("<hr /><h1 id='qunit-header'>QUnit test</h1><h2 id='qunit-banner'></h2><div id='qunit-testrunner-toolbar'></div><h2 id='qunit-userAgent'></h2><ol id='qunit-tests'></ol>");
+				
+			func_ExecMain();
+		});
+	</script>
+			
+<div id="MAIN_CONT">
+	<div id="div_BODY">
+		<div id="div_BODY_CONTENT">
+			<div id="div_calc_main">
+				<h2 style="text-align: center;">Calculator - TEST</h2>
+				<hr />
+				<div id="div_calc_result">
+					<input type="text" name="calc_result" class="c_calc_result" readonly="readonly" />
+				</div>
+				<hr />
+				<div id="div_calc_buttonsFrame">
+					<!-- Row 1 -->
+					<button id="id_C" class="c_calc_button" style="color: #bb0000">C</button> 
+					<button id="id_Power2" class="c_calc_button" style="color: #004ea5">x^2</button>
+					<button id="id_Radic" class="c_calc_button" style="color: #004ea5">&radic;</button> 
+					<button id="id_Percent" class="c_calc_button" style="color: #004ea5">mod</button> 
+					
+					<!-- Row 2 -->
+					<button id="id_7" class="c_calc_button">7</button>
+					<button id="id_8" class="c_calc_button">8</button>
+					<button id="id_9" class="c_calc_button">9</button>
+					<button id="id_Divide" class="c_calc_button" style="color: #004ea5">/</button> 
+					
+					<!-- Row 3 -->
+					<button id="id_4" class="c_calc_button">4</button>
+					<button id="id_5" class="c_calc_button">5</button>
+					<button id="id_6" class="c_calc_button">6</button>
+					<button id="id_Multi" class="c_calc_button" style="color: #004ea5">*</button> 
+					
+					<!-- Row 4 -->
+					<button id="id_1" class="c_calc_button">1</button>
+					<button id="id_2" class="c_calc_button">2</button>
+					<button id="id_3" class="c_calc_button">3</button>
+					<button id="id_Subt" class="c_calc_button" style="color: #004ea5">-</button> 
+
+					<!-- Row 5 -->
+					<button id="id_0" class="c_calc_button">0</button>
+					<button id="id_Comma" class="c_calc_button" style="color: #004ea5">,</button>
+					<button id="id_Add" class="c_calc_button" style="color: #004ea5">+</button> 
+					<button id="id_Result" class="c_calc_button" style="color: #00a317">=</button> 
+				</div>
+				<br />
+			</div>
+			<br />
+			<div class="QUNIT_PANEL">
+				<!-- If test mode is enabled, QUnit panel will be automaticaly appended here --> 
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
